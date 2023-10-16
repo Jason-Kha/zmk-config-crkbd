@@ -31,13 +31,13 @@
 // |  0    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  4  |  5  |  6  |     |      |
 // | SHFT  |     |     |     |     |     |   |     |  1  |  2  |  3  |     |      |
-//                     | GUI |     | SPC |   | ENT |     | ALT |
+//                     | GUI |     | SPC |   | ENT | MO3 | ALT |
                         label = "Number";
                         bindings = <
    &kp N0          &kp N1            &kp N2            &kp N3            &kp N4            &kp N5            &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
    &bt BT_CLR      &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4      &trans      &kp N4      &kp N5      &kp N6      &trans      &trans
    &kp LSHFT       &trans            &trans            &trans            &trans            &trans            &trans      &kp N1      &kp N2      &kp N3      &trans      &trans
-   &kp LGUI        &trans            &kp SPACE         &kp RET           &trans            &kp RALT
+   &kp LGUI        &trans            &kp SPACE         &kp RET           &mo 3             &kp RALT
                         >;
                 };
 
@@ -46,13 +46,28 @@
 // |  `~  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // |  ESC |  ~  |  #  |  /  |  {  |  [  |   |  ]  |  }  |  \  |  -  |  +  |   |  |
 // | SHFT |     |     |     |     |     |   |     |     |     |  _  |  =  |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI | MO3 | SPC |   | ENT |     | ALT |
                         label = "Symbols";
                         bindings = <
    &kp GRAVE      &kp EXCL       &kp AT        &kp HASH          &kp DLLR      &kp PRCNT      &kp CARET      &kp AMPS      &kp KP_MULTIPLY      &kp LPAR       &kp RPAR       &kp BSPC
    &kp ESC        &kp TILDE      &kp HASH      &kp KP_SLASH      &kp LBRC      &kp LBKT       &kp RBKT       &kp RBRC      &kp BSLH             &kp MINUS      &kp PLUS       &kp PIPE
    &kp LSHFT      &trans         &trans        &trans            &trans        &trans         &trans         &trans        &trans               &kp UNDER      &kp EQUAL      &trans
-   &kp LGUI       &trans         &kp SPACE     &kp RET           &trans        &kp RALT
+   &kp LGUI       &mo 3          &kp SPACE     &kp RET           &trans        &kp RALT
+                        >;
+                };
+
+                function_layer {
+// -----------------------------------------------------------------------------------------
+// |     |  F1  |  F2  |  F3  |  F4  |   |     |     |     |     |     | PGUP | BKSP |
+// |     |  F5  |  F6  |  F7  |  F8  |   |  <- |  v  |  ^  |  -> |     | PGDN | HOME |
+// |     |  F9  |  F10 |  F11 |  F12 |   |     |     |     |     |     |      | END  |
+//              | GUI  |      | SPC  |   | ENT |     | ALT |
+                        label = "Function";
+                        bindings = <
+   &trans         &kp F1      &kp F2       &kp F3       &kp F4       &trans        &trans        &trans      &trans         &trans      &kp PG_UP      &kp BSPC
+   &trans         &kp F5      &kp F6       &kp F7       &kp F8       &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &trans      &kp PG_DN      &kp HOME
+   &trans         &kp F9      &kp F10      &kp F11      &kp F12      &trans        &trans        &trans      &trans         &trans      &trans         &kp END
+   &kp LGUI       &trans      &kp SPACE    &kp RET      &trans       &kp RALT
                         >;
                 };
         };
