@@ -58,10 +58,10 @@
 
                 function_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  F1  |  F2  |  F3  |  F4  |   |     |     |     |     |     | PGUP | BKSP |
-// |     |  F5  |  F6  |  F7  |  F8  |   |  <- |  v  |  ^  |  -> |     | PGDN | HOME |
-// |     |  F9  |  F10 |  F11 |  F12 |   |     |     |     |     |     |      | END  |
-//              | GUI  |      | SPC  |   | ENT |     | ALT |
+// |     |  F1  |  F2  |  F3  |  F4  |   |     |     |     |     | PGUP | BKSP |
+// |     |  F5  |  F6  |  F7  |  F8  |   |  <- |  v  |  ^  |  -> | PGDN | HOME |
+// |     |  F9  |  F10 |  F11 |  F12 |   |     |     |     |     |      | END  |
+//              | GUI  |      |  SPC |   | ENT |     | ALT |
                         label = "Function";
                         bindings = <
    &trans         &kp F1      &kp F2       &kp F3       &kp F4       &trans      &trans        &trans        &trans      &trans         &kp PG_UP      &kp BSPC
