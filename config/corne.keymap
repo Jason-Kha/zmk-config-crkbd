@@ -15,14 +15,14 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |   E |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |   D |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |   C |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
+// | SHFT |  A  |  S  |   D |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | CTRL |  Z  |  X  |   C |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         label = "Base";
                         bindings = <
    &kp TAB        &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I          &kp O        &kp P         &kp BSPC
-   &kp LCTRL      &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K          &kp L        &kp SEMI      &kp SQT
-   &kp LSHFT      &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA      &kp DOT      &kp FSLH      &kp RSHFT
+   &kp LSHFT      &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K          &kp L        &kp SEMI      &kp SQT
+   &kp LCTRL      &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA      &kp DOT      &kp FSLH      &kp RSHFT
    &kp LGUI       &mo 1      &kp SPACE  &kp RET    &mo 2      &kp RALT
                         >;
                 };
@@ -44,14 +44,14 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  `~  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |  ~  |  #  |  /  |  {  |  [  |   |  ]  |  }  |  \  |  -  |  +  |   |  |
-// | SHFT |     |     |     |     |     |   |     |     |     |  _  |  =  |      |
+// | SHFT |  ~  |  #  |  /  |  {  |  [  |   |  ]  |  }  |  \  |  -  |  +  |   |  |
+// | CTRL |     |     |     |     |     |   |     |     |     |  _  |  =  |      |
 //                    | GUI | MO3 | SPC |   | ENT |     | ALT |
                         label = "Symbols";
                         bindings = <
    &kp GRAVE      &kp EXCL       &kp AT        &kp HASH          &kp DLLR      &kp PRCNT      &kp CARET      &kp AMPS      &kp KP_MULTIPLY      &kp LPAR       &kp RPAR       &kp BSPC
-   &kp LCTRL      &kp TILDE      &kp HASH      &kp KP_SLASH      &kp LBRC      &kp LBKT       &kp RBKT       &kp RBRC      &kp BSLH             &kp MINUS      &kp PLUS       &kp PIPE
-   &kp LSHFT      &none          &none         &none             &none         &none          &none          &none         &none                &kp UNDER      &kp EQUAL      &none
+   &kp LSHFT      &kp TILDE      &kp HASH      &kp KP_SLASH      &kp LBRC      &kp LBKT       &kp RBKT       &kp RBRC      &kp BSLH             &kp MINUS      &kp PLUS       &kp PIPE
+   &kp LCTRL      &none          &none         &none             &none         &none          &none          &none         &none                &kp UNDER      &kp EQUAL      &none
    &kp LGUI       &mo 3          &kp SPACE     &kp RET           &trans        &kp RALT
                         >;
                 };
@@ -59,14 +59,14 @@
                 function_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  F1  |  F2  |  F3  |  F4  |   |     |     |     |     | PGUP | DEL  |
-// | CTRL |  F5  |  F6  |  F7  |  F8  |   |  <- |  v  |  ^  |  -> | PGDN | HOME |
-// | SHFT |  F9  |  F10 |  F11 |  F12 |   |     |     |     |     |      | END  |
+// | SHFT |  F5  |  F6  |  F7  |  F8  |   |  <- |  v  |  ^  |  -> | PGDN | HOME |
+// | CTRL |  F9  |  F10 |  F11 |  F12 |   |     |     |     |     |      | END  |
 //              | GUI  |      |  SPC |   | ENT |     | ALT |
                         label = "Function";
                         bindings = <
    &kp ESC       &kp F1      &kp F2       &kp F3       &kp F4       &none       &none         &none         &none       &none          &kp PG_UP      &kp DEL
-   &kp LCTRL     &kp F5      &kp F6       &kp F7       &kp F8       &none       &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp PG_DN      &kp HOME
-   &kp LSHFT     &kp F9      &kp F10      &kp F11      &kp F12      &none       &none         &none         &none       &none          &none          &kp END
+   &kp LSHFT     &kp F5      &kp F6       &kp F7       &kp F8       &none       &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp PG_DN      &kp HOME
+   &kp LCTRL     &kp F9      &kp F10      &kp F11      &kp F12      &none       &none         &none         &none       &none          &none          &kp END
    &kp LGUI      &trans      &kp SPACE    &kp RET      &trans       &kp RALT
                         >;
                 };
