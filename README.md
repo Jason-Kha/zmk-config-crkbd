@@ -10,9 +10,9 @@
 
 ![Number Layer](/assets/images/crkbd_rev1_split_3x6_3_lower_layer.png)
 
-### Symbols Layer:
+### Symbol Layer:
 
-![Symbols Layer](/assets/images/crkbd_rev1_split_3x6_3_raise_layer.png)
+![Symbol Layer](/assets/images/crkbd_rev1_split_3x6_3_raise_layer.png)
 
 ### Function Layer:
 

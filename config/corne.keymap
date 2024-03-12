@@ -11,14 +11,14 @@
 
 #define DEFAULT  0
 #define NUMBER   1
-#define SYMBOLS  2
+#define SYMBOL  2
 #define FUNCTION 3
 
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
         function_layer {
-            if-layers = <NUMBER SYMBOLS>;
+            if-layers = <NUMBER SYMBOL>;
             then-layer = <FUNCTION>;
         };
     };
@@ -63,7 +63,7 @@
             // | SHFT |  ~  |  #  |  /  |  {  |  [  |   |  ]  |  }  |  \  |  -  |  +  |   |  |
             // | CTRL |     |     |     |     |     |   |     |     |     |  _  |  =  |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-            label = "Symbols";
+            label = "Symbol";
 
             bindings = <
                 &kp GRAVE      &kp EXCL       &kp AT        &kp HASH          &kp DLLR      &kp PRCNT      &kp CARET      &kp AMPS      &kp KP_MULTIPLY      &kp LPAR       &kp RPAR       &kp BSPC
