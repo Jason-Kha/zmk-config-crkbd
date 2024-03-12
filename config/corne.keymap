@@ -31,13 +31,13 @@
 // |  0   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP  |
 // |      |     |     |     |     |     |   |     |  4  |  5  |  6  |     |       |
 // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  1  |  2  |  3  |     | BTCLR |
-//                     | GUI |     | SPC |   | ENT | MO3 | ALT |
+//                    | GUI |     | SPC |   | ENT | MO3 | ALT |
                         label = "Number";
                         bindings = <
    &kp N0        &kp N1            &kp N2            &kp N3            &kp N4            &kp N5            &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
    &none         &none             &none             &none             &none             &none             &none       &kp N4      &kp N5      &kp N6      &none       &none
    &none         &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4      &none       &kp N1      &kp N2      &kp N3      &none       &bt BT_CLR
-   &kp LGUI      &trans            &kp SPACE         &kp RET           &mo 3             &kp RALT
+   &kp LGUI      &trans            &kp SPACE         &kp RET           &none             &kp RALT
                         >;
                 };
 
@@ -61,7 +61,7 @@
 // |  ESC |  F1  |  F2  |  F3  |  F4  |   |     |     |     |     | PGUP | DEL  |
 // | SHFT |  F5  |  F6  |  F7  |  F8  |   |  <- |  v  |  ^  |  -> | PGDN | HOME |
 // | CTRL |  F9  |  F10 |  F11 |  F12 |   |     |     |     |     |      | END  |
-//              | GUI  |      |  SPC |   | ENT |     | ALT |
+//               | GUI  |      |  SPC |   | ENT |     | ALT |
                         label = "Function";
                         bindings = <
    &kp ESC       &kp F1      &kp F2       &kp F3       &kp F4       &none       &none         &none         &none       &none          &kp PG_UP      &kp DEL
@@ -71,4 +71,12 @@
                         >;
                 };
         };
+
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                        if-layers = <1 2>;
+                        then-layer = <3>;
+                        };
+                };
 };
